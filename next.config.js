@@ -11,11 +11,6 @@ const nextConfig = {
   // Production optimizations
   poweredByHeader: false,
   compress: true,
-  
-  // Environment variables exposed to the browser
-  env: {
-    SITE_URL: process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000',
-  },
 }
 
 module.exports = nextConfig
