@@ -24,7 +24,7 @@ siteerectusplus/
 ### Prerequisites
 
 - Node.js (recommended version 14.x or higher)
-- npm or yarn package manager
+- npm package manager
 
 ### Installation
 
@@ -34,17 +34,31 @@ siteerectusplus/
    cd siteerectusplus
    ```
 
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
+2. No additional dependencies installation needed! The server will run using npx.
 
 ### Usage
 
-Start the development server:
+Start the development server (automatically opens in your browser):
 ```bash
 npm start
 ```
+
+Or run without auto-opening:
+```bash
+npm run serve
+```
+
+The site will be available at `http://localhost:8080`
+
+### Alternative Methods
+
+You can also serve the site using Python:
+```bash
+cd public
+python3 -m http.server 8080
+```
+
+Or using any other static file server pointed at the `public/` directory.
 
 ## Contributing
 

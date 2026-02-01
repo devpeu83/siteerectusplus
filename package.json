@@ -4,7 +4,9 @@
   "description": "Site Erectus Plus - A modern web project",
   "main": "index.js",
   "scripts": {
-    "start": "echo \"Use a static file server like 'python3 -m http.server' or 'npx serve public'\"",
+    "start": "npx http-server public -p 8080 -o",
+    "dev": "npx http-server public -p 8080 -o",
+    "serve": "npx http-server public -p 8080",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -17,5 +19,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/devpeu83/siteerectusplus.git"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
   }
 }
